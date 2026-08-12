@@ -1,278 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<!>, initial-scale=1.0">
-    <title>Portfolio</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <!-- box icons-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portafolio de Abel Salazar, desarrollador de software enfocado en web, Python, Java, SQL y análisis de datos.">
+  <meta name="theme-color" content="#07111f">
+  <title>Abel Salazar | Desarrollo y datos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--header desing-->
-    <header class="header">
-        <a href="#home" class="logo">BlackCat-Code; <span class="animate" style="--i:1;"> </span></a>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header" id="inicio">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio"><span class="brand-mark">&lt;/&gt;</span> BlackCat Code</a>
+    <button class="menu-button" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="navigation"><i class="bx bx-menu"></i></button>
+    <nav class="navigation" id="navigation" aria-label="Navegación principal">
+      <a href="#proyectos">Proyectos</a><a href="#trayectoria">Trayectoria</a><a href="#habilidades">Tecnologías</a><a href="#contacto">Contacto</a>
+    </nav>
+  </header>
 
-        <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
-
-        <nav class="navbar">
-            <a href="#home" class="active">Inicio</a>
-            <a href="#about">Acerca de Mí</a>
-            <a href="#education">Educación</a>
-            <a href="#skills">Habilidades</a>
-            <a href="#contact">Contacto</a>
-
-            <span class="active-nav"></span>
-            <span class="animate" style="--i:3;"> </span>
-        </nav>
-    </header>
-
-    <!--home section desing-->
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Hola, soy <span>Abel Salazar Galindo</span></h1>
-            <div class="text-animate">
-                <h3>Developer</h3>                
-            </div>
-            <p>
-                Soy un desarrollador Jr con conocimiento en Javascript, React, POO, Java, MySQL y un conocimiento basico en Git. Mi enfoque es 
-                siempre escribir un código limpio, bien documentado y fácilmente mantenible. Me apasiona mantenerme actualizado en las últimas 
-                tendencias y tecnologías web, soy un solucionador de problemas con habilidades analíticas y autodidacta. 
-            </p>
-            <div class="btn-box">
-                <a href="#contact" class="btn">Contactame</a>
-                <a href="https://wa.me/526564840065" class="btn" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-            </div>
+  <main id="contenido">
+    <section class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span></span> Disponible para colaborar</p>
+        <h1 id="hero-title">Hola, soy Abel.<br><em>Construyo soluciones</em> con código y datos.</h1>
+        <p class="hero-text">Desarrollador de software en formación en México. Transformo ideas y datos en experiencias web, automatizaciones y herramientas claras para problemas reales.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#proyectos">Ver proyectos <i class="bx bx-right-arrow-alt"></i></a>
+          <a class="button secondary" href="CVAbelSalazarGalindo.pdf" download>Descargar CV <i class="bx bx-download"></i></a>
         </div>
-
-        <div class="home-sci">
-            <a href="https://www.linkedin.com/in/abel-salazar-galindo/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin'></i></a>
-            <a href="https://github.com/sg-abel" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github' ></i></a>
-            <a href="https://app.netlify.com/teams/sg-abel/sites" target="_blank" rel="noopener noreferrer"><i class='bx bxl-netlify' ></i></a>
-            <a href="https://wa.me/522227077766" target="_blank" rel="noopener noreferrer"><i class='bx bxl-whatsapp'></i></a>
+        <div class="social-links" aria-label="Redes profesionales">
+          <a href="https://github.com/sg-abel" target="_blank" rel="noopener noreferrer"><i class="bx bxl-github"></i><span>GitHub</span></a>
+          <a href="https://www.linkedin.com/in/abel-salazar-galindo/" target="_blank" rel="noopener noreferrer"><i class="bx bxl-linkedin-square"></i><span>LinkedIn</span></a>
+          <a href="mailto:salazargalindoabel@gmail.com"><i class="bx bx-envelope"></i><span>Correo</span></a>
         </div>
-
-        <div class="home-imgHover"></div>
+      </div>
+      <aside class="hero-card reveal" aria-label="Perfil profesional">
+        <div class="portrait-wrap"><img src="about.png" alt="Abel Salazar trabajando en programación"></div>
+        <div class="availability"><span></span> En aprendizaje continuo</div>
+        <div class="quick-stats">
+          <div><strong>60+</strong><span>repositorios</span></div><div><strong>5</strong><span>áreas técnicas</span></div><div><strong>2024</strong><span>inicio de ingeniería</span></div>
+        </div>
+      </aside>
     </section>
 
-    <!-- about section desing-->
-    <section class="about" id="about">
-        <h2 class="heading">Acerca de <span>Mí</span></h2>
-
-        <div class="about-img">
-            <img src="about.png" alt="Imagen mia programando">
-            <span class="circle-spin"></span>
-        </div>
-
-        <div class="about-content">
-            <h3>Developer Jr!</h3>
-            <p>Tengo 36 años, estoy estudiando la carrera de Ingenieria en Base de Datos e Inteligencia Artificial de manera Online lo que me permite trabajar de tiempo completo.
-                Me encuentro en la busqueda de mi primer trabajo como desarrollador. Soy apasionado de la tegnologia y mis pasatiempos son me gusta pasar tiempo con mi familia,
-                componer cosas electronicas, jugar video juegos. 
-                Mi sitio web esta en honor a una gatita que tenia que se llamaba Pickels.                
-            </p>
-            
-            <div class="btn-box btns">
-                <a onclick="descargarPDF()" class="btn">Descargar CV</a>
-            </div>
-        </div>
+    <section class="projects section-shell" id="proyectos" aria-labelledby="projects-title">
+      <div class="section-heading reveal"><div><p class="eyebrow">Trabajo reciente</p><h2 id="projects-title">Proyectos destacados</h2></div><a class="text-link" href="https://github.com/sg-abel?tab=repositories" target="_blank" rel="noopener noreferrer">Ver todos en GitHub <i class="bx bx-link-external"></i></a></div>
+      <div class="project-grid">
+        <article class="project-card featured reveal"><div class="project-number">01</div><div class="project-content"><div class="project-tags"><span>Python</span><span>Streamlit</span><span>Datos</span></div><h3>Municipal Budget Monitor</h3><p>Sistema para monitorear ejecución presupuestal, indicadores de desempeño y riesgos financieros municipales, con importación desde Excel y visualización de datos.</p><a href="https://github.com/sg-abel/municipal-budget-monitor" target="_blank" rel="noopener noreferrer">Explorar proyecto <i class="bx bx-right-arrow-alt"></i></a></div></article>
+        <article class="project-card reveal"><div class="project-number">02</div><div class="project-content"><div class="project-tags"><span>Python</span><span>IA</span><span>Frontend</span></div><h3>Prototipo IA Fútbol</h3><p>Experimento de inteligencia artificial aplicada al fútbol, organizado en capas de aplicación, datos e interfaz.</p><a href="https://github.com/sg-abel/prototipo_IA_futbol" target="_blank" rel="noopener noreferrer">Ver repositorio <i class="bx bx-right-arrow-alt"></i></a></div></article>
+        <article class="project-card reveal"><div class="project-number">03</div><div class="project-content"><div class="project-tags"><span>SQL</span><span>Modelado</span></div><h3>Biblioteca Digital</h3><p>Modelo de base de datos y consultas para administrar el catálogo y las operaciones de una biblioteca digital.</p><a href="https://github.com/sg-abel/Bibliotaca-Digital" target="_blank" rel="noopener noreferrer">Ver repositorio <i class="bx bx-right-arrow-alt"></i></a></div></article>
+        <article class="project-card reveal"><div class="project-number">04</div><div class="project-content"><div class="project-tags"><span>Python</span><span>Audio</span><span>PDF</span></div><h3>Audiobook</h3><p>Automatización que transforma contenido de un documento PDF en un archivo de audio reproducible.</p><a href="https://github.com/sg-abel/audiobook" target="_blank" rel="noopener noreferrer">Ver repositorio <i class="bx bx-right-arrow-alt"></i></a></div></article>
+        <article class="project-card reveal"><div class="project-number">05</div><div class="project-content"><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><h3>Registro de productos</h3><p>Aplicación web ligera para capturar, organizar y mostrar información de productos desde el navegador.</p><a href="https://github.com/sg-abel/Registro-de-productos" target="_blank" rel="noopener noreferrer">Ver repositorio <i class="bx bx-right-arrow-alt"></i></a></div></article>
+      </div>
     </section>
 
-    <!--education section desing -->
-    <section class="education" id="education">
-        <h2 class="heading">Mis <span>Estudios</span></h2>
+    <section class="journey" id="trayectoria"><div class="section-shell journey-grid">
+      <div class="journey-copy reveal"><p class="eyebrow">Mi recorrido</p><h2>De los fundamentos a soluciones aplicadas.</h2><p>Mi GitHub documenta una evolución constante: desarrollo web, lógica de programación, orientación a objetos, bases de datos y proyectos de análisis. Hoy enfoco ese aprendizaje en herramientas útiles, mantenibles y centradas en las personas.</p></div>
+      <ol class="timeline reveal">
+        <li><span>2020–2023</span><div><h3>Fundamentos y desarrollo web</h3><p>HTML, CSS, JavaScript, interfaces responsivas y lógica de aplicaciones.</p></div></li>
+        <li><span>2024–Actualidad</span><div><h3>Ingeniería de Datos e IA</h3><p>Formación universitaria en IEU, complementada con Python, Java y SQL.</p></div></li>
+        <li><span>Ahora</span><div><h3>Proyectos con impacto</h3><p>Analítica, automatización y productos digitales orientados a problemas reales.</p></div></li>
+      </ol>
+    </div></section>
 
-        <div class="education-row">
-            <div class="education-column">
-                <h3 class="title">Educación</h3>
-                <div class="education-box">
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i> 2024-  </div>
-                            <h3>Ingenieria de Datos e Inteligencia Artificial</h3>
-                            <p>Comence la carrera en el 2024 en la universidad IEU (Instituto de Estudios Universitarios) en linea.</p>
-                        </div>
-                    </div>
-
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i> 2021 - 2022</div>
-                            <h3>Desarrollo Web Completo - Udemy</h3>
-                            <p>Tome el curso online de Desarrollo Web completo donde aprendi mis primeras lineas de codigo en HTML, 
-                                JavaScript y CSS. Creando proyectos como una tienda de ropa, un festival de musica entre otros. Aprendi 
-                                la programacion orientada a objetos, poliformismo, diferencia entre clase y objeto y más.</p>
-                        </div>
-                    </div>
-
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i> 2022 - 2023 </div>
-                            <h3>JavaScript: de cero hasta los detalles - Udemy</h3>
-                            <p>Actualmente me encuentro en este curso aprendiendo más sobre JavaScript, ¿Que es?, limitantes, 
-                            objetos, funciones, arreglos, ciclos, eventos y patrones de diseño.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="education-column">
-                <h3 class="title">Experiencia</h3>
-                <div class="education-box">
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i> 2020-2020 </div>
-                            <h3>Juego JavaScript</h3>
-                            <p>Este código JavaScript define una función constructora llamada "Jugador" que se utiliza para crear objetos de jugador con propiedades 
-                                como "nombre", "pv" y "sp". También define tres métodos de objeto: "curar", "tirarFlecha" y "tirarEspada", que se utilizan para realizar
-                                 acciones dentro del juego. </p> <br>
-                                <a href="https://lnkd.in/gpfUejTC " target="_blank" rel="noopener noreferrer"><span> Da click aqui para ir a git-hub y descargar el juego</span></a>
-                        </div>
-                    </div>
-
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i> 2021 - 2021 </div>
-                            <h3>Sistema Vacacional en Java</h3>
-                            <p>Este programa en Java calcula los días de vacaciones de un trabajador en función de su antigüedad y su clave de 
-                                departamento. Dentro de cada bloque, se utilizan condiciones adicionales para evaluar la antigüedad del 
-                                trabajador y determinar el número de días de vacaciones que se le debe conceder.</p> <br>
-                                <a href="https://github.com/sg-abel/SistemaVacacional" target="_blank" rel="noopener noreferrer">
-                                    <span> Da click aqui para ir a git-hub y descargar el programa
-                                </a>
-                        </div>
-                    </div>
-
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i> 2022 - 2022 </div>
-                            <h3>Proyecto Personal | Abel Salazar Galindo ID en C#</h3>
-                            <p>Este programa muestra información personal
-                                sobre mí. Primero, imprime "Abel Salazar Galindo
-                                ID" en la consola. Luego, se definen algunas
-                                variables para almacenar información como mi
-                                altura, edad, nombre, lugar de nacimiento, fecha
-                                de nacimiento, información relevante y mi hobby.
-                                C# y .NET</p> <br>
-                                <a href="https://lnkd.in/gzgRp-mm" target="_blank" rel="noopener noreferrer">
-                                    <span> Da click aqui para ir a git-hub y descargar el programa
-                                </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="skills section-shell" id="habilidades" aria-labelledby="skills-title">
+      <div class="section-heading reveal"><div><p class="eyebrow">Caja de herramientas</p><h2 id="skills-title">Tecnologías que utilizo</h2></div></div>
+      <div class="skills-grid reveal">
+        <div class="skill-group"><i class="bx bx-code-alt"></i><h3>Frontend</h3><p>HTML5 · CSS3 · JavaScript · Diseño responsivo</p></div>
+        <div class="skill-group"><i class="bx bx-data"></i><h3>Datos</h3><p>SQL · MySQL · Pandas · Power BI</p></div>
+        <div class="skill-group"><i class="bx bx-terminal"></i><h3>Programación</h3><p>Python · Java · Programación orientada a objetos</p></div>
+        <div class="skill-group"><i class="bx bx-line-chart"></i><h3>Visualización</h3><p>Streamlit · Plotly · Indicadores y dashboards</p></div>
+        <div class="skill-group"><i class="bx bx-git-branch"></i><h3>Flujo de trabajo</h3><p>Git · GitHub · Documentación · Aprendizaje continuo</p></div>
+      </div>
     </section>
 
-    <!--skills section desing-->
+    <section class="contact" id="contacto"><div class="section-shell contact-inner reveal">
+      <p class="eyebrow">Hablemos</p><h2>¿Tienes una idea o una oportunidad?</h2><p>Estoy abierto a colaborar en proyectos de desarrollo, datos y automatización, así como a oportunidades donde pueda seguir creciendo y aportar valor.</p>
+      <div class="contact-actions"><a class="button primary" href="mailto:salazargalindoabel@gmail.com?subject=Contacto%20desde%20tu%20portafolio">Escríbeme <i class="bx bx-envelope"></i></a><a class="button secondary" href="https://www.linkedin.com/in/abel-salazar-galindo/" target="_blank" rel="noopener noreferrer">Conectar en LinkedIn <i class="bx bxl-linkedin"></i></a></div>
+    </div></section>
+  </main>
 
-    <section class="skills" id="skills">
-        <h2 class="heading">Mis <span>Habilidades</span></h2>
-
-        <div class="skills-row">
-            <div class="skills-column">
-                <h3 class="title">Coding Skills</h3>
-
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3>HTML <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                        <div class="progress">
-                            <h3>CSS <span>85%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                        <div class="progress">
-                            <h3>JavaScript <span>85%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                        <div class="progress">
-                            <h3>React <span>75%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skills-column">
-                <h3 class="title">Profesional Skills</h3>
-
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3>Ingles <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                        <div class="progress">
-                            <h3>Análisis y resolución de errores <span>85%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                        <div class="progress">
-                            <h3>Diseño web responsive <span>85%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                        <div class="progress">
-                            <h3>Git/GitHub <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <!-- contact section desing -->
-    <section class="contact" id="contact">
-        <h2 class="heading">Contacta <span>Conmigo</span></h2>
-        <form action="#" id="formulario">
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="text" id="nombre" placeholder="Nombre" required>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="text" id="email" placeholder="Correo Electronico" required>
-                    <span class="focus"></span>
-                </div>
-            </div>
-
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="number" id="celular" placeholder="Celular" required>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="text" id="asunto" placeholder="Asunto" required>
-                    <span class="focus"></span>
-                </div>
-            </div>
-
-            <div class="textarea-field">
-                <textarea name="" id="mensaje" cols="30" rows="10" placeholder="Tu Mensaje" required></textarea>
-                <span class="focus"></span>
-            </div>
-
-            <div class="btn-box btns">
-                <button type="submit" class="btn">Enviar</button>
-            </div>
-        </form>
-    </section>
-
-    <!--footer desing-->
-    <div class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2025 by BlackCatCode | Todos los Derechos Reservados</p>
-        </div>
-
-        <div class="footer-iconTop">
-            <a href="#"><i class='bx bxs-hand-up'></i></a>
-        </div>
-    </div>
-    
-<script src="script.js"></script>
+  <footer><div class="section-shell footer-inner"><p>© <span id="year"></span> Abel Salazar · BlackCat Code</p><a href="#inicio">Volver arriba <i class="bx bx-up-arrow-alt"></i></a></div></footer>
+  <script src="script.js"></script>
 </body>
 </html>
+
